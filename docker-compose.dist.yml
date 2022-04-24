@@ -2,8 +2,8 @@ version: "3"
 
 services:
 
-  routeros-6-49-6:
-    image: evilfreelancer/docker-routeros:6.49.6
+  chr-7-2-1:
+    image: chr_7_2_1
     restart: unless-stopped
     cap_add:
       - NET_ADMIN
@@ -15,19 +15,3 @@ services:
       - "18728:8728"
       - "18729:8729"
       - "8001:80"
-
-  routeros-6-47:
-    image: evilfreelancer/docker-routeros:latest
-    restart: unless-stopped
-    cap_add:
-      - NET_ADMIN
-    devices:
-      - /dev/net/tun
-    ports:
-      - "22222:22"
-      - "22223:23"
-      - "7777:80"
-      - "8728:8728"
-      - "8729:8729"
-      - "28728:8728"
-      - "28729:8729"
