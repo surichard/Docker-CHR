@@ -2,8 +2,8 @@ version: "3"
 
 services:
 
-  chr-7-2-1:
-    image: chr_7_2_1
+  chr-7-2-3:
+    image: chr_7_2_3
     restart: unless-stopped
     cap_add:
       - NET_ADMIN
