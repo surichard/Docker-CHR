@@ -48,6 +48,6 @@ exec qemu-system-x86_64 \
    -vnc 0.0.0.0:0 \
    -m 256 \
    -smp 1,sockets=1,cores=1,threads=1 \
-   -nic tap,id=qemu1,mac=60:56:61:CD:01:21,script=$QEMU_IFUP,downscript=$QEMU_IFDOWN \
+   -nic tap,id=qemu1,mac=60:56:61:CD:01:26,script=$QEMU_IFUP,downscript=$QEMU_IFDOWN \
    "$@" \
    -hda $ROUTEROS_IMAGE
